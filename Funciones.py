@@ -9,3 +9,6 @@ def actualizar(productos):
         json.dump(productos, archivo)
 
 def agregar(lista,productos):
+    if productos.strip()=="":
+        print("el producto no puede estar vacio")
+        #continuar desde aca mañana

@@ -8,3 +8,4 @@ def actualizar(productos):
     with open("producto.json","w") as archivo:
         json.dump(productos, archivo)
 
+def agregar(lista,productos):

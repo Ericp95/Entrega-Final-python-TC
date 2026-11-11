@@ -5,4 +5,5 @@ def abrir():
         productos = json.load(archivo)
 
 def actualizar():
+    with open("producto.json","w") as archivo:
 

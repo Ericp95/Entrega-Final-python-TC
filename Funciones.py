@@ -15,5 +15,5 @@ def agregar(lista,productos):
     if nombre.strip()=="":
         print("el producto no puede estar vacio")
     else:
-        
+        productos.append(nombre)
         

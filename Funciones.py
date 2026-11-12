@@ -16,5 +16,8 @@ def agregar(lista,productos):
         print("el producto no puede estar vacio")
     else:
         productos.append(nombre)
+        actualizar()
         print(f"\n el producto: {nombre.title()} agregado correctamente")
+
+
         

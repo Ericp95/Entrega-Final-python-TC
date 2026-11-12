@@ -21,6 +21,7 @@ def agregar(lista,productos):
 
 
 def mostrar(productos):
+    abrir()
     print("*****lista de productos*****")
     for producto in productos:  
          productos.sort()

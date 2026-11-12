@@ -20,5 +20,8 @@ def agregar(lista,productos):
         print(f"\n el producto: {nombre.title()} agregado correctamente")
 
 
-def mostrar():
-    print("*****lista de productos*****")     
+def mostrar(productos):
+    print("*****lista de productos*****")
+    for producto in productos:  
+         productos.sort()
+         print(producto.title())   

@@ -20,4 +20,5 @@ def agregar(lista,productos):
         print(f"\n el producto: {nombre.title()} agregado correctamente")
 
 
-def mostrar():     
+def mostrar():
+    print("*****lista de productos*****")     

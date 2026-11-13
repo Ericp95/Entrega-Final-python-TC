@@ -36,3 +36,4 @@ def borrar(lista, producto):
     return nueva
 
 def buscar(lista, producto):
+    if producto in lista:

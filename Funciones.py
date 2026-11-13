@@ -26,3 +26,5 @@ def mostrar(productos):
     for producto in productos:  
          productos.sort()
          print(producto.title())   
+
+def borrar(lista, producto):

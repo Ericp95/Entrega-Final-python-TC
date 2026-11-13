@@ -28,3 +28,4 @@ def mostrar(productos):
          print(producto.title())   
 
 def borrar(lista, producto):
+    if producto not in lista:

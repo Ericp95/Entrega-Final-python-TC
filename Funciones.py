@@ -34,3 +34,5 @@ def borrar(lista, producto):
     nueva.remove(producto)
     print(f"el producto {producto}, eliminado con exito")
     return nueva
+
+def buscar(lista, producto):

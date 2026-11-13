@@ -30,3 +30,4 @@ def mostrar(productos):
 def borrar(lista, producto):
     if producto not in lista:
         print("el elemento a borrar no existe")
+    nueva=lista.copy

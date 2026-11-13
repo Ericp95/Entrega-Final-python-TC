@@ -32,4 +32,5 @@ def borrar(lista, producto):
         print("el elemento a borrar no existe")
     nueva=lista.copy
     nueva.remove(producto)
+    print(f"el producto {producto}, eliminado con exito")
     return nueva

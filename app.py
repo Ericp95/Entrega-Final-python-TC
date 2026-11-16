@@ -7,3 +7,4 @@ def menu():
     print("1_Agregar Productos")
     print("2_Mostar productos")
     print("3_Listar productos")
+    print("4_Busqueda producto")

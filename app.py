@@ -9,3 +9,4 @@ def menu():
     print("3_Listar productos")
     print("4_Busqueda producto")
     print("5_Eliminar producto")
+    print("6_SALIR")

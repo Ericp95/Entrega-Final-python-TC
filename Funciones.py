@@ -38,4 +38,5 @@ def borrar(lista, producto):
 def buscar(lista, producto):
     if producto in lista:
         print(f"el producto con el nombre {producto}, existe")
-        #segui desp
+    else:
+        print("el producto que busca, no existe")

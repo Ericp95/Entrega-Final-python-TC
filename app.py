@@ -6,3 +6,4 @@ def menu():
     print("*****MENU*****")
     print("1_Agregar Productos")
     print("2_Mostar productos")
+    print("3_Listar productos")

@@ -2,10 +2,9 @@ from Funciones import agregar, mostrar
 
 def menu():
 
+    producto=[]
+
     while True:
-
-
-      producto=[]
 
       print("*****MENU*****")
       print("1_Agregar Productos")

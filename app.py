@@ -16,4 +16,7 @@ def menu():
     match opciones:
 
         case "1":
+            
         case "6":
+            print("Gracias por utilizar nuestro menu")
+            break

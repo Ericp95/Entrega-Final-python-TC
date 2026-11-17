@@ -1,5 +1,6 @@
 import json
 
+
 def abrir(productos):
     with open("producto.json", "r") as archivo:
         datos = json.load(archivo)
@@ -11,13 +12,14 @@ def actualizar(productos):
         json.dump(productos, archivo)
 
 def agregar(lista,productos):
-    nombre=input("ingrese nombre del producto")
-    if nombre.strip()=="":
-        print("el producto no puede estar vacio")
-    else:
-        productos.append(nombre)
-        actualizar()
-        print(f"\n el producto: {nombre.title()} agregado correctamente")
+        
+        if productos.strip()=="":
+           print("el prosucto no puede estar vacio")
+           return lista
+        nuevalista=lista.copy()
+        nuevalista.append(productos)
+        print(f"\n el producto: {productos.title()} agregado correctamente")
+        return nuevalista
 
 
 def mostrar(productos):

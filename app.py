@@ -20,7 +20,8 @@ def menu():
       match opciones:
 
         case "1":
-            agregar()
+            nombre=input("ingrese nombre del producto")
+            producto=agregar(nombre,producto)
         case "6":
             print("Gracias por utilizar nuestro menu")
             break

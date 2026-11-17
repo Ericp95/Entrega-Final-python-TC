@@ -16,3 +16,4 @@ def menu():
     match opciones:
 
         case "1":
+        case "6":

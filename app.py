@@ -22,6 +22,7 @@ def menu():
         case "1":
             nombre=input("ingrese nombre del producto")
             producto=agregar(nombre,producto)
+        case "2":
         case "6":
             print("Gracias por utilizar nuestro menu")
             break

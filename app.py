@@ -1,4 +1,4 @@
-from Funciones import agregar
+from Funciones import agregar, mostrar
 
 def menu():
 
@@ -23,6 +23,7 @@ def menu():
             nombre=input("ingrese nombre del producto")
             producto=agregar(nombre,producto)
         case "2":
+            mostrar()
         case "6":
             print("Gracias por utilizar nuestro menu")
             break

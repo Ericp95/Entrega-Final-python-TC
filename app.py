@@ -12,3 +12,5 @@ def menu():
     print("6_SALIR")
 
     opciones=int(input("Ingrese opcion de 1 al 6"))
+
+    match opciones:

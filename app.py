@@ -14,3 +14,5 @@ def menu():
     opciones=int(input("Ingrese opcion de 1 al 6"))
 
     match opciones:
+
+        case "1":

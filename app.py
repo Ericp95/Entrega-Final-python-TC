@@ -22,6 +22,8 @@ def menu():
             productos=agregar(nombre,productos)
         case "2":
             mostrar(productos)
+        case "3":
+            
         case "6":
             print("Gracias por utilizar nuestro menu")
             break

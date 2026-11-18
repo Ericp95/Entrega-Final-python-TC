@@ -27,6 +27,7 @@ def menu():
             productos= buscar(nombre,productos)
         case "4":
             nombre=input("ingrese nombre del producto que desea eliminar")
+            productos=borrar(nombre, productos)
         case "5":
             print("Gracias por utilizar nuestro menu")
             break

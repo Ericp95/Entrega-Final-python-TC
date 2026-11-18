@@ -22,7 +22,7 @@ def menu():
             nombre=input("ingrese nombre del producto")
             productos=agregar(nombre,productos)
         case "2":
-            mostrar()
+            mostrar(productos)
         case "6":
             print("Gracias por utilizar nuestro menu")
             break

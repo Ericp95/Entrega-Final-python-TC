@@ -9,9 +9,9 @@ def menu():
       print("*****MENU*****")
       print("1_Agregar Productos")
       print("2_Mostar productos")
-      print("4_Busqueda producto")
-      print("5_Eliminar producto")
-      print("6_SALIR")
+      print("3_Busqueda producto")
+      print("4_Eliminar producto")
+      print("5_SALIR")
 
       opciones=int(input("Ingrese opcion de 1 al 6"))
 

@@ -1,4 +1,4 @@
-from Funciones import agregar, mostrar, buscar
+from Funciones import agregar, mostrar, buscar, borrar
 
 def menu():
 

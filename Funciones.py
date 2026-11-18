@@ -29,12 +29,12 @@ def mostrar(productos):
          productos.sort()
          print(producto.title())   
 
-def borrar(lista, producto):
-    if producto not in lista:
+def borrar(lista, productos):
+    if productos not in lista:
         print("el elemento a borrar no existe")
     nueva=lista.copy
-    nueva.remove(producto)
-    print(f"el producto {producto}, eliminado con exito")
+    nueva.remove(productos)
+    print(f"el producto {productos}, eliminado con exito")
     return nueva
 
 def buscar(lista, producto):

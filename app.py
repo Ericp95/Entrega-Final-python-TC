@@ -2,7 +2,7 @@ from Funciones import agregar, mostrar
 
 def menu():
 
-    producto=[]
+    productos=[]
 
     while True:
 
@@ -20,7 +20,7 @@ def menu():
 
         case "1":
             nombre=input("ingrese nombre del producto")
-            producto=agregar(nombre,producto)
+            productos=agregar(nombre,productos)
         case "2":
             mostrar()
         case "6":

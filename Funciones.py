@@ -1,10 +1,7 @@
 import json
 
 
-def abrir(productos):
-    with open("producto.json", "r") as archivo:
-        datos = json.load(archivo)
-        productos.extend(datos)
+
         
 
 def actualizar(productos):

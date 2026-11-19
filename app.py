@@ -31,3 +31,5 @@ def menu():
         case "5":
             print("Gracias por utilizar nuestro menu")
             break
+
+menu()

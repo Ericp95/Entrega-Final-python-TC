@@ -1,7 +1,15 @@
 import json
 
 
+def abrir(productos):
+    try:
+        with open("producto.json", "r") as archivo:
+            datos = json.load(archivo)
+            productos.extend(datos)
 
+    except FileNotFoundError:
+        with open("producto.json", "w") as archivo:
+            json.dump([], archivo)
         
 
 def actualizar(productos):

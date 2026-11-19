@@ -4,6 +4,8 @@ def menu():
 
     productos=[]
 
+    abrir(productos)
+
     while True:
 
       print("*****MENU*****")

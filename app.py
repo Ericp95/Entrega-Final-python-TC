@@ -22,6 +22,7 @@ def menu():
         case "1":
             nombre=input("ingrese nombre del producto")
             productos=agregar(productos,nombre)
+            agregar(productos,nombre)
         case "2":
             mostrar(productos)
         case "3":

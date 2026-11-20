@@ -17,19 +17,21 @@ def actualizar(productos):
         json.dump(productos, archivo)
 
 def agregar(lista,productos):
-        
+       
         if productos.strip()=="":
            print("el prosucto no puede estar vacio")
            return lista
         nuevalista=lista.copy()
         nuevalista.append(productos)
+        actualizar(nuevalista)
         print(f"\n el producto: {productos.title()} agregado correctamente")
         return nuevalista
 
 
 def mostrar(productos):
-    abrir(productos)
     print("*****lista de productos*****")
+    abrir(productos)
+    actualizar(productos)
     for producto in productos:  
          productos.sort()
          print(producto.title())   

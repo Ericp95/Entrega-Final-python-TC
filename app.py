@@ -15,7 +15,7 @@ def menu():
       print("4_Eliminar producto")
       print("5_SALIR")
 
-      opciones=input("Ingrese opcion de 1 al 6")
+      opciones=input("Ingrese opcion:")
 
       match opciones:
 

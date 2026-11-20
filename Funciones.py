@@ -40,6 +40,7 @@ def borrar(lista, productos):
         return lista
     nueva=lista.copy
     nueva.remove(productos)
+    actualizar(nueva)
 
     print(f"el producto {productos}, eliminado con exito")
     return nueva

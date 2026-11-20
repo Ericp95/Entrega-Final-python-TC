@@ -30,7 +30,7 @@ def agregar(lista,productos):
 
 def mostrar(productos):
     print("*****lista de productos*****")
-    abrir(productos)
+    
     actualizar(productos)
     for producto in productos:  
          productos.sort()

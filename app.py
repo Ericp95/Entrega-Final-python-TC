@@ -20,14 +20,17 @@ def menu():
       match opciones:
 
         case "1":
-            nombre=input("ingrese nombre del producto")
-            productos=agregar(productos,nombre)
-            agregar(productos,nombre)
+            productoAgregar = input("Producto a agregar: ")
+            precio = input("Precio del producto: ")
+            categoria = input("Categoria del producto: ")
+            
+            fruta = [productoAgregar,float(precio),categoria]
+            productos = agregar(productos, fruta)
         case "2":
             mostrar(productos)
         case "3":
             nombre=input("ingrese nombre del producto a buscar")
-            productos= buscar(productos,nombre)
+            buscar(productos,nombre)
         case "4":
             nombre=input("ingrese nombre del producto que desea eliminar")
             productos=borrar(productos,nombre)

@@ -18,13 +18,13 @@ def actualizar(lista):
 
 def agregar(lista,productos):
        
-        if productos.strip()=="":
+        if productos[0].strip()=="":
            print("el prosucto no puede estar vacio")
            return lista
         nuevalista=lista.copy()
         nuevalista.append(productos)
         actualizar(nuevalista)
-        print(f"\n el producto: {productos.title()} agregado correctamente")
+        print(f"\n el producto: {productos[0].title()} agregado correctamente")
         return nuevalista
 
 
@@ -32,28 +32,29 @@ def mostrar(productos):
     print("*****lista de productos*****")
     for producto in productos:  
          productos.sort()
-         print(producto.title())   
+         print(f"Nombre Producto: {producto[0].title()} | Precio: ${producto[1]} | Categoría: {producto[2]}")   
 
-def borrar(lista, productos):
-    if productos not in lista:
-        print("el elemento a borrar no existe")
-        return lista
-    nueva=lista.copy()
-    nueva.remove(productos)
-    actualizar(nueva)
+def borrar(lista,nombre):
+    nueva = lista.copy()
 
-    print(f"el producto {productos}, eliminado con exito")
-    return nueva
+    for producto in nueva:
+        if producto[0].lower() == nombre.lower():
+            nueva.remove(producto)
+            actualizar(nueva)
+            print(f"El producto {nombre.title()} fue eliminado correctamente")
+            return nueva
 
-def buscar(lista, producto):
-    encontrado = False
+    print("El producto no existe")
+    return lista
 
-    for item in lista:
-        if item.lower() == producto.lower():
-            encontrado = True
-            break
+def buscar(lista, nombre):
+    for producto in lista:
+        if producto[0].lower() == nombre.lower():
+            print("\nProducto encontrado:")
+            print(f"Nombre: {producto[0].title()}")
+            print(f"Precio: ${producto[1]}")
+            print(f"Categoría: {producto[2]}")
+            return True
 
-    if encontrado:
-        print(f"El producto {producto.title()} existe")
-    else:
-        print(f"El producto {producto.title()} no existe")
+    print("El producto no existe")
+    return False

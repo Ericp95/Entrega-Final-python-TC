@@ -12,9 +12,9 @@ def abrir(productos):
             json.dump([], archivo)
         
 
-def actualizar(productos):
+def actualizar(lista):
     with open("producto.json","w") as archivo:
-        json.dump(productos, archivo)
+        json.dump(lista, archivo)
 
 def agregar(lista,productos):
        

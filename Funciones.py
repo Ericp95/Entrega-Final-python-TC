@@ -46,7 +46,14 @@ def borrar(lista, productos):
     return nueva
 
 def buscar(lista, producto):
-    if producto in lista:
-        print(f"el producto con el nombre {producto}, existe")
+    encontrado = False
+
+    for item in lista:
+        if item.lower() == producto.lower():
+            encontrado = True
+            break
+
+    if encontrado:
+        print(f"El producto {producto.title()} existe")
     else:
-        print("el producto que busca, no existe")
+        print(f"El producto {producto.title()} no existe")

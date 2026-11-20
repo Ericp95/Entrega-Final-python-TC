@@ -37,8 +37,10 @@ def mostrar(productos):
 def borrar(lista, productos):
     if productos not in lista:
         print("el elemento a borrar no existe")
+        return lista
     nueva=lista.copy
     nueva.remove(productos)
+
     print(f"el producto {productos}, eliminado con exito")
     return nueva
 
